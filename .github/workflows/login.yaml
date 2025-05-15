@@ -41,3 +41,12 @@ jobs:
           WEBHOST: ${{ secrets.WEBHOST }}
         run: |
           python login_script.py
+
+  workflow-keepalive:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: 保持仓库活跃
+        uses: liskin/gh-workflow-keepalive@v1          
