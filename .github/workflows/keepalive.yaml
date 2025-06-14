@@ -1,0 +1,16 @@
+name: 保持
+
+on:
+  schedule:
+    - cron: '0 6 1,15 * *'  # 每天 UTC 6 点运行一次
+  workflow_dispatch:      # 可手动运行
+
+jobs:
+  keepalive:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: 保持仓库活跃
+        uses: liskin/gh-workflow-keepalive@v1
