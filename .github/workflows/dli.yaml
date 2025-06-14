@@ -1,4 +1,4 @@
-name: Daily Checkin
+name: VPN前端
 
 on:
   schedule:
