@@ -4,10 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 0 1,15 * *"  # 每月1号运行一次
-  push:
-    branches:
-      - main
-
 jobs:
   login:
     runs-on: ubuntu-latest
