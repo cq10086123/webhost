@@ -3,7 +3,6 @@ import requests
 
 def denglu():
     raw_accounts = os.environ.get("ACCOUNTS", "")
-    print("ACCOUNTS =", os.getenv("ACCOUNTS"))
     account_entries = [entry.strip() for entry in raw_accounts.split(";") if entry.strip()]
 
     urls = []
