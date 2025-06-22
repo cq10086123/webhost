@@ -4,6 +4,7 @@ import requests
 
 def send_telegram_message(message):
     bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
+    print(bot_token)
     chat_id = os.environ.get('TELEGRAM_CHAT_ID')
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     payload = {
