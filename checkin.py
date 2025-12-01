@@ -23,8 +23,8 @@ def denglu():
             #xiaoxi1=email+passwd
             #send_telegram_message(xiaoxi1)
             urls.append({
-                "login_url": "https://ikuuu.ch/auth/login",
-                "checkin_url": "https://ikuuu.ch/user/checkin",
+                "login_url": "https://ikuuu.boo/auth/login",
+                "checkin_url": "https://ikuuu.boo/user/checkin",
                 "credentials": {
                     "email": email,
                     "passwd": passwd
